@@ -2,13 +2,13 @@
 
 ### Introduction
 
-Le Corewar est un des projets les plus complexes de l'année. Le but est de créer une bataille de mémoire entre deux programmes dans une machine virtuel, le programme qui gagnge est le programme qui prends le plus de mémoire.
+Le Corewar est un des projets les plus complexes de l'année. Le but est de créer une bataille de mémoire entre deux programmes dans une machine virtuel, le programme qui gagne est le programme qui prend le plus de mémoire.
 
 
 
 ### Assembleur
 
-Les programmes qui vont se combattres sont appelés des champions, ils doivent être écris en assembleur. Pour que cela puisses être possible on a donc du créer un compilateur ASM avec gestion d'erreur pour parser et interpréter le code de ces derniers. Vous pouvez retrouver ci-dessous un exemple de champion écrit en assembleur.
+Les programmes qui vont se combattre sont appelés des champions, ils doivent être écrits en assembleur. Pour que cela puisse être possible, on a donc dû créer un compilateur ASM avec gestion d'erreur pour parser et interpréter le code de ces derniers. Vous pouvez retrouver ci-dessous un exemple de champion écrit en assembleur.
 
 ```nasm
 .name		"Celebration Funebre v0.99pl42"
@@ -85,10 +85,10 @@ level100:	live %42
 
 ### Machine Virtuelle
 
-Le rôle de la machine virtuelle est d'exécuter les champions compilés et allouer un espace mémoire afin de les faire se combattre. Elle doit donc gérer les deux programmes de manières synchronisés et executer les instructions de chacuns les uns après les autres.
+Le rôle de la machine virtuelle est d'exécuter les champions compilés et allouer un espace mémoire afin de les faire se combattre. Elle doit donc gérer les deux programmes de manières synchronisés et exécuter les instructions de chacun les uns après les autres.
 
 Elle contient les éléments suivants:
 
 * Des REGNUMBER registres de REG\_SIZE taille, chaque registres sont des petits espaces mémoire qui permettent de stocker des données.
 * Un Program Counter qui permet de retenir l'addresse de l'exécution.
-* Un flag nommé "carry" qui prends en valeur 1 si et seulement si la dernière execution retourne un 0
+* Un flag nommé "carry" qui prends en valeur 1 si et seulement si la dernière exécution retourne un 0
